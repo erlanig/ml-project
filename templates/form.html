@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="form">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}" />
+
+    <!-- IMPORT ICON -->
+    <link rel="shortcut icon" type="image/x-icon" href="../static/images/medical.ico" />
+
+    <!-- IMPORT CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      select:required:invalid {
+        color: rgb(172, 172, 172);
+      }
+
+      option {
+        color: black;
+      }
+    </style>
+    <title>Form | Prediction of Benign and Malignant Mammography Masses</title>
+  </head>
+  <body class="font-sans bg-gray-300 text flex items-center justify-center">
+    <div class="container mx-autu justify-center">
+      <div class="flex justify-center px-6 my-32">
+        <div class="md:w-1/2 bg-white rounded shadow-xl ring-1 ring-gray-900/5 px-10">
+          <a href="/">
+            <button class="font-bold underline mt-6 hover:text-blue-500 hover:background-white transition-all">Back</button>
+          </a>
+          <div class="text-center mt-3 text-2xl font-bold">INPUT FORM</div>
+          <form class="block mt-2 rounded-lg" action="/result" method="POST">
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="day"> BI-RADS </label>
+              <select required id="birads" name="birads" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="" disabled selected hidden>Select BI-RADS</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="car"> Age </label>
+              <input required type="number" id="age" name="age" class="shadow appearance-none border rounded w-1/4 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" />
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="day"> Shape </label>
+              <select required id="shape" name="shape" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="" disabled selected hidden>Select Shape</option>
+                <option value="1">Round</option>
+                <option value="2">Oval</option>
+                <option value="3">Lobular</option>
+                <option value="4">Irregular</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="day"> Margin </label>
+              <select required id="margin" name="margin" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="" disabled selected hidden>Select Margin</option>
+                <option value="1">Circumscribed</option>
+                <option value="2">Microlobulated</option>
+                <option value="3">Obscured</option>
+                <option value="4">Ill-defined</option>
+                <option value="5">Spiculated</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="block text-gray-700 font-bold mb-1" for="day"> Density </label>
+              <select required id="density" name="density" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+                <option value="" disabled selected hidden>Select Shape</option>
+                <option value="1">High</option>
+                <option value="2">Iso</option>
+                <option value="3">Low</option>
+                <option value="4">Fat-containing</option>
+              </select>
+            </div>
+            <div class="mb-8 text-center">
+              <input type="submit" value="Predictions" class="hover:bg-transparent bg-green-700 hover:text-green-700 font-semibold text-white py-2 px-4 border hover:border-green-700 border-transparent rounded" />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -5,9 +5,15 @@
 | No  | Nama               |
 | --- | ------------------ |
 | 1   | Erlan Irhab Ghalib |
+
+<!--
+| No  | Nama               |
+| --- | ------------------ |
+| 1   | Erlan Irhab Ghalib |
 | 2   | Luthfi Fauzi       |
 | 3   | M. Yanuar Dwianto  |
 | 4   | Naufal Arif Rajabi |
+-->
 
 ## Overview
 
