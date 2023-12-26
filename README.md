@@ -1,10 +1,12 @@
-# Discrimination of Benign and Malignant Mammographic Masses
+# Web-Based Prediction of Benign and Malignant Mammography Masses Using the KNN Algorithm
 
 ## Contributors
-1. Erlan Irhab Ghalib
-2. M. Yanuar Dwianto
-3. Luthfi Fauzi
-4. Naufal Arif Rajabi
+| No  | Nama                 |
+|----|----------------------|
+| 1  | Erlan Irhab Ghalib   |
+| 2  | M. Yanuar Dwianto    |
+| 3  | Luthfi Fauzi         |
+| 4  | Naufal Arif Rajabi   |
 
 ## Overview
 Mammography is the most effective method for breast cancer screening
