@@ -8,7 +8,7 @@ knn = pickle.load(open("./static/models/mammo.pkl", "rb"))
 # TES
 
 
-def trafficPrediction(data):
+def mammoPrediction(data):
     data = np.array(data).reshape(1, -1)
     # Get the prediction
     result = knn.predict(data)
@@ -53,7 +53,7 @@ def result():
                 density,
             ]
         ]
-        result = prediction(to_predict_list)
+        result = mammoPrediction(to_predict_list)
 
         if result == 0:
             prediction = "Benign"
