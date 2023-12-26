@@ -3,7 +3,7 @@ from flask import Flask, render_template, request
 import pickle
 import numpy as np
 import sklearn.metrics
-knn = pickle.load(open("./static/models/mammo.pkl", "rb"))
+knn = pickle.load(open("./static/models/mammofix.pkl", "rb"))
 
 # TES
 
