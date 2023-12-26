@@ -53,7 +53,7 @@ def result():
                 density,
             ]
         ]
-        result = trafficPrediction(to_predict_list)
+        result = prediction(to_predict_list)
 
         if result == 0:
             prediction = "Benign"
